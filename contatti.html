@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | SicilyStore</title>
+  <meta name="description" content="Contatti SicilyStore e modulo richiesta preventivo.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">S</span>
+        <span>
+          <strong>SicilyStore</strong>
+          <small>Soluzioni scientifiche per ricerca e industria</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <nav id="site-menu" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="prodotti.html">Prodotti</a>
+        <a href="settori.html">Settori</a>
+        <a href="brand.html">Brand</a>
+        <a href="news.html">News</a>
+        <a href="contatti.html" class="active">Contatti</a>
+        <a href="#preventivo" class="btn btn-sm">Richiedi preventivo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contatti</p>
+        <h1>Parla con SicilyStore</h1>
+        <p class="lead narrow">Il sito è ottimizzato per contatti commerciali rapidi e richieste preventivo basate sul prodotto o sull’applicazione.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="card">
+          <h2>Contatti diretti</h2>
+          <ul class="contact-list">
+            <li><strong>Telefono</strong><a href="tel:+420732624332">+420732624332</a></li>
+            <li><strong>Email</strong><a href="mailto:info@sicilystore.com">info@sicilystore.com</a></li>
+            <li><strong>WhatsApp</strong><a href="https://wa.me/420732624332" target="_blank" rel="noopener">Apri chat</a></li>
+            <li><strong>Copertura</strong><span>Europa</span></li>
+          </ul>
+        </div>
+
+        <div id="preventivo" class="card">
+          <h2>Richiedi preventivo</h2>
+          <p>Questo modulo statico apre il client email dell’utente con i campi precompilati. In produzione puoi sostituirlo con un endpoint server o un servizio form.</p>
+          <form id="quoteForm" class="quote-form">
+            <div class="form-grid">
+              <label>Nome
+                <input type="text" id="fullName" required>
+              </label>
+              <label>Azienda
+                <input type="text" id="companyName">
+              </label>
+              <label>Email
+                <input type="email" id="emailAddress" required>
+              </label>
+              <label>Telefono
+                <input type="tel" id="phoneNumber">
+              </label>
+              <label>Prodotto di interesse
+                <input type="text" id="productName">
+              </label>
+              <label>Settore
+                <select id="interestSector">
+                  <option value="">Seleziona</option>
+                  <option>Laboratori</option>
+                  <option>Industria</option>
+                  <option>Farmaceutico</option>
+                  <option>Alimentare</option>
+                  <option>Università</option>
+                  <option>Professionisti</option>
+                </select>
+              </label>
+            </div>
+            <label>Messaggio
+              <textarea id="messageText" rows="6" placeholder="Descrivi la tua richiesta..."></textarea>
+            </label>
+            <div class="cta-row">
+              <button type="submit" class="btn">Invia richiesta</button>
+              <a class="btn btn-secondary" href="mailto:info@sicilystore.com">Scrivi via email</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom"><small>© SicilyStore</small></div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/contact-page.js"></script>
+</body>
+</html>

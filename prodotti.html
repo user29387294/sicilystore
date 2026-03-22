@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prodotti | SicilyStore</title>
+  <meta name="description" content="Catalogo SicilyStore con filtro per categoria, settore, applicazione e brand. Solo richiesta preventivo.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">S</span>
+        <span>
+          <strong>SicilyStore</strong>
+          <small>Soluzioni scientifiche per ricerca e industria</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <nav id="site-menu" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="prodotti.html" class="active">Prodotti</a>
+        <a href="settori.html">Settori</a>
+        <a href="brand.html">Brand</a>
+        <a href="news.html">News</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="contatti.html#preventivo" class="btn btn-sm">Richiedi preventivo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Catalogo prodotti</p>
+        <h1>Catalogo filtrabile</h1>
+        <p class="lead narrow">Naviga il catalogo per categoria, settore, applicazione e brand. Ogni scheda è orientata alla richiesta preventivo, senza prezzi pubblici.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container catalog-layout">
+        <aside class="catalog-sidebar card">
+          <h2>Filtri</h2>
+          <div class="filter-group">
+            <label for="searchInput">Ricerca</label>
+            <input id="searchInput" type="search" placeholder="Cerca un prodotto...">
+          </div>
+          <div class="filter-group">
+            <label for="categoryFilter">Categoria</label>
+            <select id="categoryFilter"></select>
+          </div>
+          <div class="filter-group">
+            <label for="applicationFilter">Applicazione</label>
+            <select id="applicationFilter"></select>
+          </div>
+          <div class="filter-group">
+            <label for="sectorFilter">Settore</label>
+            <select id="sectorFilter"></select>
+          </div>
+          <div class="filter-group">
+            <label for="brandFilter">Brand</label>
+            <select id="brandFilter"></select>
+          </div>
+          <button id="resetFilters" class="btn btn-secondary btn-block" type="button">Reset filtri</button>
+        </aside>
+
+        <div>
+          <div class="catalog-toolbar">
+            <p id="resultsCount">0 prodotti</p>
+          </div>
+          <div id="productGrid" class="product-grid"></div>
+          <div id="noResults" class="card empty-state hidden">
+            <h3>Nessun prodotto trovato</h3>
+            <p>Modifica i filtri o contattaci per una proposta personalizzata.</p>
+            <a class="btn" href="contatti.html#preventivo">Richiedi preventivo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>SicilyStore</h3>
+        <p>Catalogo tecnico statico con richiesta preventivo.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul class="list-clean">
+          <li><a href="tel:+420732624332">+420732624332</a></li>
+          <li><a href="mailto:info@sicilystore.com">info@sicilystore.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/catalog-data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/catalog-page.js"></script>
+</body>
+</html>

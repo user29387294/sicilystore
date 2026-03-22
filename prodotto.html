@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dettaglio prodotto | SicilyStore</title>
+  <meta name="description" content="Scheda prodotto SicilyStore con richiesta preventivo.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">S</span>
+        <span>
+          <strong>SicilyStore</strong>
+          <small>Soluzioni scientifiche per ricerca e industria</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <nav id="site-menu" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="prodotti.html" class="active">Prodotti</a>
+        <a href="settori.html">Settori</a>
+        <a href="brand.html">Brand</a>
+        <a href="news.html">News</a>
+        <a href="contatti.html">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero small">
+      <div class="container breadcrumb-row">
+        <a href="prodotti.html">← Torna al catalogo</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" id="productDetail"></div>
+      <div class="container hidden" id="productNotFound">
+        <div class="card empty-state">
+          <h1>Prodotto non trovato</h1>
+          <p>Il link richiesto non è disponibile. Torna al catalogo per continuare la navigazione.</p>
+          <a class="btn" href="prodotti.html">Vai al catalogo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <small>© SicilyStore</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/catalog-data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/product-page.js"></script>
+</body>
+</html>
